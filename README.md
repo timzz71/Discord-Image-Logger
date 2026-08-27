@@ -1,21 +1,4 @@
-# 🖼️ Discord Image Logger
-
-```
-████████╗██╗███╗░░░███╗███████╗██████╗░███████╗██████╗░███████╗
-╚══██╔══╝██║████╗░████║██╔════╝██╔══██╗╚════██║╚════██╗╚════██║
-░░░██║░░░██║██╔████╔██║█████╗░░██████╔╝░░███╔═╝░█████╔╝░░███╔═╝
-░░░██║░░░██║██║╚██╔╝██║██╔══╝░░██╔══██╗██╔══╝░░██╔═══╝░██╔══╝░░
-░░░██║░░░██║██║░╚═╝░██║███████╗██║░░██║███████╗██║░░░░░███████╗
-░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚══════╝
-```
-```
-  ███████╗███████╗██████╗░  ██████╗░██████╗░██╗██╗░░░██╗███████╗
-  ██╔════╝╚════██║╚════██╗  ██╔══██╗╚════██╗██║██║░░░██║╚════██║
-  █████╗░░░░███╔═╝░█████╔╝  ██████╦╝░█████╔╝██║╚██╗░██╔╝░░███╔═╝
-  ██╔══╝░░██╔══╝░░░╚═══██╗  ██╔══██╗░╚═══██╗██║░╚████╔╝░██╔══╝░░
-  ██║░░░░░███████╗██████╔╝  ██████╦╝██████╔╝██║░░╚██╔╝░░███████╗
-  ╚═╝░░░░░╚══════╝╚═════╝░  ╚═════╝░╚═════╝░╚═╝░░░╚═╝░░░╚══════╝
-```
+# Discord Image Logger
 
 **A powerful, open-source tool for educational and research purposes that demonstrates how Discord's "Open Original" feature can be exploited to gather IP addresses and system information.**
 
@@ -26,44 +9,25 @@
 
 ---
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│                  🄲🅁🄴🄰🅃🄴🄳 🄱🅈 🅃🄸🄼$🄴🅁🅉                        │
-│                                                             │
-│     ████████╗██╗███╗░░░███╗███████╗███████╗██████╗        │
-│     ╚══██╔══╝██║████╗░████║╚════██║╚════██║╚════██╗       │
-│     ░░░██║░░░██║██╔████╔██║░░███╔═╝░░███╔═╝░█████╔╝       │
-│     ░░░██║░░░██║██║╚██╔╝██║██╔══╝░░██╔══╝░░██╔═══╝        │
-│     ░░░██║░░░██║██║░╚═╝░██║███████╗███████╗██║░░░░░        │
-│     ░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚══════╝╚═╝░░░░░        │
-│                                                             │
-│                 🄶🄸🅃🄷🅄🄱: @🅃🄸🄼🅉🄯71                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## ⚠️ DISCLAIMER - READ THIS FIRST
+## Disclaimer - Read This First
 
 > **IMPORTANT: This tool is provided SOLELY FOR EDUCATIONAL AND RESEARCH PURPOSES.**
 >
 > **YOU ARE NOT ALLOWED TO:**
-> - ❌ Use this tool for malicious purposes
-> - ❌ Use this tool without explicit consent from all parties involved
-> - ❌ Violate Discord's Terms of Service
-> - ❌ Share, sell, or distribute collected data
-> - ❌ Target individuals without their knowledge
-> - ❌ Use this for harassment, doxxing, or any illegal activity
+> - Use this tool for malicious purposes
+> - Use this tool without explicit consent from all parties involved
+> - Violate Discord's Terms of Service
+> - Share, sell, or distribute collected data
+> - Target individuals without their knowledge
+> - Use this for harassment, doxxing, or any illegal activity
 >
 > **YOU ARE ALLOWED TO:**
-> - ✅ Use this in controlled, consensual environments
-> - ✅ Educate others about privacy and security risks
-> - ✅ Test your own systems and networks
-> - ✅ Report security vulnerabilities responsibly
-> - ✅ Learn how web technologies work
-> - ✅ Understand how Discord's features can be exploited
+> - Use this in controlled, consensual environments
+> - Educate others about privacy and security risks
+> - Test your own systems and networks
+> - Report security vulnerabilities responsibly
+> - Learn how web technologies work
+> - Understand how Discord's features can be exploited
 >
 > **The author is NOT responsible for any misuse or damage caused by this tool.**
 >
@@ -71,28 +35,11 @@
 
 ---
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║           ⚡ DEVELOPED BY Tim$erz ⚡                      ║
-║                                                           ║
-║   ███████╗██╗   ██╗██╗     ██╗      ███████╗██████╗     ║
-║   ██╔════╝╚██╗ ██╔╝██║     ██║      ██╔════╝╚════██╗    ║
-║   █████╗   ╚████╔╝ ██║     ██║█████╗███████╗ █████╔╝    ║
-║   ██╔══╝    ╚██╔╝  ██║     ██║╚════╝╚════██║██╔═══╝     ║
-║   ███████╗   ██║   ███████╗███████╗███████║███████╗     ║
-║   ╚══════╝   ╚═╝   ╚══════╝╚══════╝╚══════╝╚══════╝     ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
----
-
-## 📖 What is This?
+## What is This?
 
 **Discord Image Logger** is a Python-based HTTP server that demonstrates a privacy vulnerability in Discord's "Open Original" feature.
 
-### How It Works (Simple Explanation)
+### How It Works
 
 1. **You host this script** on a server (your PC, a VPS, or using ngrok)
 2. **You get a link** like `https://your-site.com/imagelogger`
@@ -108,63 +55,28 @@ Discord's "Open Original" feature is designed to let users view the original ver
 
 ---
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│                  🄲🅁🄴🄰🅃🄾🅁: 🅃🄸🄼$🄴🅁🅉                            │
-│                                                             │
-│              ██████╗ ██╗████████╗██╗  ██╗██╗   ██╗██████╗  │
-│             ██╔════╝ ██║╚══██╔══╝██║  ██║╚██╗ ██╔╝╚════██╗ │
-│             ██║  ███╗██║   ██║   ███████║ ╚████╔╝  █████╔╝ │
-│             ██║   ██║██║   ██║   ██╔══██║  ╚██╔╝  ██╔═══╝  │
-│             ╚██████╔╝██║   ██║   ██║  ██║   ██║   ███████╗ │
-│              ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝ │
-│                                                             │
-│              🄶🄸🅃🄷🅄🄱: 🄶🄸🅃🄷🅄🄱.🄲🄾🄼/🅃🄸🄼🅉🄯71                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## ⚡ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| **IP Address Logging** | Captures the user's public IP address |
-| **Geolocation** | Shows country, region, city, and approximate coordinates |
-| **Precise GPS Location** | Can request the user's exact GPS location (asks for permission) |
-| **User-Agent Parsing** | Identifies Operating System, Browser name, and version |
-| **VPN/Proxy Detection** | Detects if the user is hiding their IP with a VPN or proxy |
-| **Bot Detection** | Identifies automated bots and can ignore them |
-| **Custom Image Preview** | Use any image as the preview shown in Discord |
-| **Browser Crash** | Optional browser freeze/crash for testing purposes |
-| **Custom Redirect** | Redirect users to any webpage after opening the link |
-| **Custom Messages** | Display personalized messages to users |
-| **Link Share Alerts** | Get notified when someone shares your link in a chat |
-| **Discord Webhook** | All data is sent directly to your Discord channel |
-| **Anti-Bot Protection** | Prevents bots from triggering false alerts |
-| **Anti-VPN Protection** | Can ignore or flag VPN users |
+| IP Address Logging | Captures the user's public IP address |
+| Geolocation | Shows country, region, city, and approximate coordinates |
+| Precise GPS Location | Can request the user's exact GPS location (asks for permission) |
+| User-Agent Parsing | Identifies Operating System, Browser name, and version |
+| VPN/Proxy Detection | Detects if the user is hiding their IP with a VPN or proxy |
+| Bot Detection | Identifies automated bots and can ignore them |
+| Custom Image Preview | Use any image as the preview shown in Discord |
+| Browser Crash | Optional browser freeze/crash for testing purposes |
+| Custom Redirect | Redirect users to any webpage after opening the link |
+| Custom Messages | Display personalized messages to users |
+| Link Share Alerts | Get notified when someone shares your link in a chat |
+| Discord Webhook | All data is sent directly to your Discord channel |
+| Anti-Bot Protection | Prevents bots from triggering false alerts |
+| Anti-VPN Protection | Can ignore or flag VPN users |
 
 ---
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║                 🌟 CODED BY Tim$erz 🌟                    ║
-║                                                           ║
-║           🔗 https://github.com/timzz71 🔗               ║
-║                                                           ║
-║   ▄▀▀▄ █▀▀▄ █▀▀▄ █▀▀ ▄▀▀▄ ▀█▀ █▀▀▄ █▀▀ ▄▀▀▄ █▀▀▄ █▀▀▀ ▄▀▀▄ ║
-║   █  █ █  █ █  █ █   █  █  █  █  █ █   █  █ █  █ █    █  █ ║
-║   ▀▀▀▀ ▀  ▀ ▀  ▀ ▀▀▀ ▀▀▀▀  ▀  ▀  ▀ ▀▀▀ ▀▀▀▀ ▀  ▀ ▀▀▀▀ ▀▀▀▀ ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
----
-
-## 🔧 Installation
+## Installation
 
 ### What You Need Before Starting
 
@@ -262,26 +174,45 @@ Your server is now running on `http://localhost:8080`
 
 ---
 
+## Usage
+
+### Basic Usage
+
+1. **Start the server:**
+   ```bash
+   python main.py
+   ```
+
+2. **Get your link:**
+   - Local testing: `http://localhost:8080/imagelogger`
+   - With ngrok: `https://your-ngrok-url.ngrok.io/imagelogger`
+   - With VPS: `https://your-domain.com/imagelogger`
+
+3. **Share the link** in a Discord server or DM
+
+4. **Wait for someone to click "Open Original"**
+
+5. **Check your Discord webhook channel** for the data
+
+### URL Arguments (Advanced)
+
+You can customize the behavior by adding arguments to the URL:
+
+| Argument | What It Does | Example |
+|----------|--------------|---------|
+| `?url=` | Use a custom image (base64 encoded) | `?url=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=` |
+| `?id=` | Same as `url`, alternative format | `?id=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=` |
+| `?g=` | GPS coordinates (added automatically) | `?g=MzcsLTEyMg==` |
+
+### Example Full URL
+
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│           🄲🄾🄳🄴🄳 🄱🅈 🅃🄸🄼$🄴🅁🅉  🄲🄾🄿🅈🅁🄸🄶🄷🅃 2024               │
-│                                                             │
-│         ████████╗██╗███╗░░░███╗███████╗███████╗██████╗    │
-│         ╚══██╔══╝██║████╗░████║╚════██║╚════██║╚════██╗   │
-│         ░░░██║░░░██║██╔████╔██║░░███╔═╝░░███╔═╝░█████╔╝   │
-│         ░░░██║░░░██║██║╚██╔╝██║██╔══╝░░██╔══╝░░██╔═══╝    │
-│         ░░░██║░░░██║██║░╚═╝░██║███████╗███████╗██║░░░░░    │
-│         ░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚══════╝╚═╝░░░░░    │
-│                                                             │
-│               🄶🄸🅃🄷🅄🄱: 🄶🄸🅃🄷🅄🄱.🄲🄾🄼/🅃🄸🄼🅉🄯71                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+https://your-domain.com/imagelogger?url=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=
 ```
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Complete Configuration Options
 
@@ -353,24 +284,7 @@ Hello {ip}! Your ISP is {isp} and you're located in {city}, {country}. You are u
 
 ---
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║              ✦ Tim$erz - GitHub ✦                       ║
-║                                                           ║
-║         ╔═══╗╔═══╗╔═══╗╔═══╗╔═══╗╔═══╗╔═══╗            ║
-║         ║ ╔═╝║ ═ ║║ ═ ║║ ╔═╝║ ╔╗║╚═╗ ║║ ╔═╝            ║
-║         ║ ╚═╗║ ═ ║║ ═ ║║ ╚═╗║ ╚╝║ ╔╝╔╝║ ╚═╗            ║
-║         ╚═══╝╚═══╝╚═══╝╚═══╝╚═══╝ ╚══╝ ╚═══╝            ║
-║                                                           ║
-║              🄶🄸🅃🄷🅄🄱: 🄶🄸🅃🄷🅄🄱.🄲🄾🄼/🅃🄸🄼🅉🄯71                   ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
----
-
-## 📊 Data Collected
+## Data Collected
 
 When a user clicks "Open Original", the following data is logged and sent to your Discord webhook:
 
@@ -378,30 +292,30 @@ When a user clicks "Open Original", the following data is logged and sent to you
 
 | Data | Description |
 |------|-------------|
-| **IP Address** | The user's public IP address |
-| **ISP** | Internet Service Provider name |
-| **ASN** | Autonomous System Number |
-| **Country** | Country where the IP is registered |
-| **Region** | Region/State name |
-| **City** | City name |
-| **Coordinates** | Approximate latitude and longitude |
-| **Timezone** | Timezone of the IP location |
+| IP Address | The user's public IP address |
+| ISP | Internet Service Provider name |
+| ASN | Autonomous System Number |
+| Country | Country where the IP is registered |
+| Region | Region/State name |
+| City | City name |
+| Coordinates | Approximate latitude and longitude |
+| Timezone | Timezone of the IP location |
 
 ### Device Information
 
 | Data | Description |
 |------|-------------|
-| **Operating System** | OS name and version |
-| **Browser** | Browser name and version |
-| **User Agent** | Full user-agent string (contains all above) |
+| Operating System | OS name and version |
+| Browser | Browser name and version |
+| User Agent | Full user-agent string (contains all above) |
 
 ### Network Information
 
 | Data | Description |
 |------|-------------|
-| **VPN/Proxy** | Whether a VPN or proxy was detected |
-| **Mobile** | Whether the user is on a mobile device |
-| **Bot** | Whether a bot was detected |
+| VPN/Proxy | Whether a VPN or proxy was detected |
+| Mobile | Whether the user is on a mobile device |
+| Bot | Whether a bot was detected |
 
 ### Example of What You'll Receive
 
@@ -431,51 +345,32 @@ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36...
 
 ---
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│            🄿🅁🄾🄹🄴🄲🅃 🄱🅈 🅃🄸🄼$🄴🅁🅉 - 🄲🅁🄴🄰🅃🄾🅁                 │
-│                                                             │
-│         ██████╗ ██╗████████╗██╗  ██╗██╗   ██╗██████╗      │
-│        ██╔════╝ ██║╚══██╔══╝██║  ██║╚██╗ ██╔╝╚════██╗     │
-│        ██║  ███╗██║   ██║   ███████║ ╚████╔╝  █████╔╝     │
-│        ██║   ██║██║   ██║   ██╔══██║  ╚██╔╝  ██╔═══╝      │
-│        ╚██████╔╝██║   ██║   ██║  ██║   ██║   ███████╗     │
-│         ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   ╚══════╝     │
-│                                                             │
-│              🄶🄸🅃🄷🅄🄱: 🄶🄸🅃🄷🅄🄱.🄲🄾🄼/🅃🄸🄼🅉🄯71                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 🛡️ Privacy & Security
+## Privacy & Security
 
 ### Legal Guidelines
 
 **This tool is intended for educational purposes only. Before using it, consider:**
 
-1. **Obtain explicit consent** from all parties you plan to log
-2. **Never share or misuse** the data you collect
-3. **Respect user privacy** - comply with GDPR, CCPA, and your local laws
-4. **Use for education** - teach others about privacy risks
-5. **Don't target individuals** without their knowledge and consent
-6. **Don't violate Discord's Terms of Service**
+1. Obtain explicit consent from all parties you plan to log
+2. Never share or misuse the data you collect
+3. Respect user privacy - comply with GDPR, CCPA, and your local laws
+4. Use for education - teach others about privacy risks
+5. Don't target individuals without their knowledge and consent
+6. Don't violate Discord's Terms of Service
 
 ### Where the Data Goes
 
-- Data is sent **ONLY** to your Discord webhook
+- Data is sent ONLY to your Discord webhook
 - No data is stored on the server
 - No data is sent to third parties
 - No data is logged to files (unless you modify the script)
 
 ### Protecting Yourself
 
-- **Keep your webhook URL secret** - anyone with it can receive your data
-- **Use HTTPS** when possible to encrypt traffic
-- **Don't share logs publicly** - they contain sensitive information
-- **Delete old webhooks** when you're done testing
+- Keep your webhook URL secret - anyone with it can receive your data
+- Use HTTPS when possible to encrypt traffic
+- Don't share logs publicly - they contain sensitive information
+- Delete old webhooks when you're done testing
 
 ### Your Responsibility
 
@@ -488,38 +383,21 @@ By using this tool, you agree that:
 
 ---
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║                 🄲🅁🄴🄰🅃🄾🅁: 🅃🄸🄼$🄴🅁🅉                               ║
-║                                                           ║
-║                   ╔═══╗╔═══╗╔═══╗╔═══╗                   ║
-║                   ║ ╔═╝║ ═ ║║ ═ ║║ ╔═╝                   ║
-║                   ║ ╚═╗║ ═ ║║ ═ ║║ ╚═╗                   ║
-║                   ╚═══╝╚═══╝╚═══╝╚═══╝                   ║
-║                                                           ║
-║                   🄶🄸🅃🄷🅄🄱: @🅃🄸🄼🅉🄯71                            ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-```
-
----
-
-## 🐞 Troubleshooting
+## Troubleshooting
 
 ### Common Issues and Fixes
 
 | Issue | Solution |
 |-------|----------|
-| **ModuleNotFoundError: No module named 'requests'** | Run `pip install requests` |
-| **ModuleNotFoundError: No module named 'httpagentparser'** | Run `pip install httpagentparser` |
-| **Webhook not sending data** | Check your webhook URL is correct and active |
-| **No data when testing** | Make sure you clicked "Open Original", not just viewed the preview |
-| **Server won't start** | Port 8080 might be in use. Change the port in the script |
-| **ngrok not working** | Make sure ngrok is installed and you have an account |
-| **Firewall blocking** | Allow port 8080 in your firewall settings |
-| **Bot detection blocking** | Adjust `antiBot` settings if you want to see bots |
-| **VPN detection blocking** | Adjust `vpnCheck` settings if you want to see VPN users |
+| ModuleNotFoundError: No module named 'requests' | Run `pip install requests` |
+| ModuleNotFoundError: No module named 'httpagentparser' | Run `pip install httpagentparser` |
+| Webhook not sending data | Check your webhook URL is correct and active |
+| No data when testing | Make sure you clicked "Open Original", not just viewed the preview |
+| Server won't start | Port 8080 might be in use. Change the port in the script |
+| ngrok not working | Make sure ngrok is installed and you have an account |
+| Firewall blocking | Allow port 8080 in your firewall settings |
+| Bot detection blocking | Adjust `antiBot` settings if you want to see bots |
+| VPN detection blocking | Adjust `vpnCheck` settings if you want to see VPN users |
 
 ### Error Codes
 
@@ -539,28 +417,9 @@ You can test locally by:
 
 ---
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│                    ⚡ Tim$erz ⚡                            │
-│                                                             │
-│   ████████╗██╗███╗░░░███╗███████╗███████╗██████╗███████╗  │
-│   ╚══██╔══╝██║████╗░████║╚════██║╚════██║╚════██║╚════██║ │
-│   ░░░██║░░░██║██╔████╔██║░░███╔═╝░░███╔═╝░█████╔╝░░███╔═╝ │
-│   ░░░██║░░░██║██║╚██╔╝██║██╔══╝░░██╔══╝░░██╔═══╝░██╔══╝░░ │
-│   ░░░██║░░░██║██║░╚═╝░██║███████╗███████╗██║░░░░░███████╗ │
-│   ░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚══════╝╚═╝░░░░░╚══════╝ │
-│                                                             │
-│              🄶🄸🅃🄷🅄🄱: 🄶🄸🅃🄷🅄🄱.🄲🄾🄼/🅃🄸🄼🅉🄯71                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+## License
 
----
-
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the LICENSE file for details.
 
 **You are free to:**
 - Use this software for any purpose
@@ -576,24 +435,37 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Timzz71** (Tim$erz)
+**Timzz71**
 
-- 🐦 **GitHub:** [github.com/timzz71](https://github.com/timzz71)
-- 🎮 **Discord:** `Crypted3057` (ID: `884763850749120544`)
-- 📧 **Email:** `timcrypted3057@gmail.com`
+- GitHub: github.com/timzz71
+- Discord: `Crypted3057` (ID: `884763850749120544`)
+- Email: `timcrypted3057@gmail.com`
 
 ---
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║            ❤️ MADE WITH LOVE BY Tim$erz ❤️               ║
-║                                                           ║
-║                🄶🄸🅃🄷🅄🄱: @🅃🄸🄼🅉🄯71                             ║
-║                                                           ║
-║         ██████╗  ██████╗ ██████╗ ███████╗               ║
-║         ██╔══██╗██╔═══██╗██╔══██╗██╔════╝               ║
-║         ██║  ██║██║   ██║██████╔╝█████╗                  ║
-║         ██
+## Support
+
+If you find this tool useful for educational purposes:
+
+- Star the repository on GitHub
+- Report issues and bugs
+- Submit pull requests
+- Share this to educate others about privacy
+
+---
+
+## Final Notes
+
+**This tool is a demonstration of how browser-based tracking works. The purpose is EDUCATION, not exploitation.**
+
+The internet is not anonymous. Every time you click a link, you reveal information about yourself. This tool shows you what information is exposed and why you should be careful about what links you click.
+
+**Use this knowledge responsibly.**
+
+---
+
+*Made with ❤️ for educational purposes*
+
+**Last Updated:** 2024
