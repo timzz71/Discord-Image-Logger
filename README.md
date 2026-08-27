@@ -1,4 +1,4 @@
-# Discord Image Logger
+# 🖼️ Discord Image Logger
 
 **A powerful, open-source tool for educational and research purposes that demonstrates how Discord's "Open Original" feature can be exploited to gather IP addresses and system information.**
 
@@ -9,84 +9,88 @@
 
 ---
 
-## Disclaimer - Read This First
+## ⚠️ DISCLAIMER - READ THIS FIRST
 
-> **IMPORTANT: This tool is provided SOLELY FOR EDUCATIONAL AND RESEARCH PURPOSES.**
+> **🚨 IMPORTANT: This tool is provided SOLELY FOR EDUCATIONAL AND RESEARCH PURPOSES.**
 >
-> **YOU ARE NOT ALLOWED TO:**
-> - Use this tool for malicious purposes
-> - Use this tool without explicit consent from all parties involved
-> - Violate Discord's Terms of Service
-> - Share, sell, or distribute collected data
-> - Target individuals without their knowledge
-> - Use this for harassment, doxxing, or any illegal activity
+> **⛔ YOU ARE NOT ALLOWED TO:**
+> - ❌ Use this tool for malicious purposes
+> - ❌ Use this tool without explicit consent from all parties involved
+> - ❌ Violate Discord's Terms of Service
+> - ❌ Share, sell, or distribute collected data
+> - ❌ Target individuals without their knowledge
+> - ❌ Use this for harassment, doxxing, or any illegal activity
 >
-> **YOU ARE ALLOWED TO:**
-> - Use this in controlled, consensual environments
-> - Educate others about privacy and security risks
-> - Test your own systems and networks
-> - Report security vulnerabilities responsibly
-> - Learn how web technologies work
-> - Understand how Discord's features can be exploited
+> **✅ YOU ARE ALLOWED TO:**
+> - ✔️ Use this in controlled, consensual environments
+> - ✔️ Educate others about privacy and security risks
+> - ✔️ Test your own systems and networks
+> - ✔️ Report security vulnerabilities responsibly
+> - ✔️ Learn how web technologies work
+> - ✔️ Understand how Discord's features can be exploited
 >
-> **The author is NOT responsible for any misuse or damage caused by this tool.**
+> **👨‍⚖️ The author is NOT responsible for any misuse or damage caused by this tool.**
 >
 > *By downloading, installing, or using this tool, you agree to take FULL responsibility for your actions.*
 
 ---
 
-## What is This?
+## 📖 What is This?
 
 **Discord Image Logger** is a Python-based HTTP server that demonstrates a privacy vulnerability in Discord's "Open Original" feature.
 
-### How It Works
+### 🔍 How It Works
 
-1. **You host this script** on a server (your PC, a VPS, or using ngrok)
-2. **You get a link** like `https://your-site.com/imagelogger`
-3. **You share the link** in a Discord server or direct message
-4. **Discord fetches a preview** - it sees a loading image (not suspicious)
-5. **A user clicks "Open Original"** to see the full image
-6. **Their information is logged** - IP address, location, browser, OS, etc.
-7. **Data is sent to your Discord channel** via a webhook
+| # | Step | Description |
+|---|------|-------------|
+| 1️⃣ | **Host the script** | Run on your PC, VPS, or using ngrok |
+| 2️⃣ | **Get a link** | `https://your-site.com/imagelogger` |
+| 3️⃣ | **Share the link** | Post in a Discord server or DM |
+| 4️⃣ | **Discord fetches preview** | Shows a harmless loading image |
+| 5️⃣ | **User clicks "Open Original"** | Their browser loads the image |
+| 6️⃣ | **Information is logged** | IP, location, browser, OS, etc. |
+| 7️⃣ | **Data sent to Discord** | Delivered via your webhook |
 
-### Why This Matters
+### 🎯 Why This Matters
 
 Discord's "Open Original" feature is designed to let users view the original version of an image. However, when a user clicks this, their browser makes a direct request to the server hosting the image. This request reveals their IP address, user agent, and other information. This is not a Discord-specific issue - it's how the internet works. The purpose of this tool is to educate people about these privacy risks.
 
 ---
 
-## Features
+## ⚡ Features
 
-| Feature | Description |
-|---------|-------------|
-| IP Address Logging | Captures the user's public IP address |
-| Geolocation | Shows country, region, city, and approximate coordinates |
-| Precise GPS Location | Can request the user's exact GPS location (asks for permission) |
-| User-Agent Parsing | Identifies Operating System, Browser name, and version |
-| VPN/Proxy Detection | Detects if the user is hiding their IP with a VPN or proxy |
-| Bot Detection | Identifies automated bots and can ignore them |
-| Custom Image Preview | Use any image as the preview shown in Discord |
-| Browser Crash | Optional browser freeze/crash for testing purposes |
-| Custom Redirect | Redirect users to any webpage after opening the link |
-| Custom Messages | Display personalized messages to users |
-| Link Share Alerts | Get notified when someone shares your link in a chat |
-| Discord Webhook | All data is sent directly to your Discord channel |
-| Anti-Bot Protection | Prevents bots from triggering false alerts |
-| Anti-VPN Protection | Can ignore or flag VPN users |
+| 🏷️ Feature | 📝 Description |
+|------------|----------------|
+| 🌐 **IP Address Logging** | Captures the user's public IP address |
+| 📍 **Geolocation** | Shows country, region, city, and approximate coordinates |
+| 📡 **Precise GPS Location** | Can request the user's exact GPS location (asks for permission) |
+| 💻 **User-Agent Parsing** | Identifies Operating System, Browser name, and version |
+| 🛡️ **VPN/Proxy Detection** | Detects if the user is hiding their IP with a VPN or proxy |
+| 🤖 **Bot Detection** | Identifies automated bots and can ignore them |
+| 🖼️ **Custom Image Preview** | Use any image as the preview shown in Discord |
+| 💥 **Browser Crash** | Optional browser freeze/crash for testing purposes |
+| 🔄 **Custom Redirect** | Redirect users to any webpage after opening the link |
+| 💬 **Custom Messages** | Display personalized messages to users |
+| 🔔 **Link Share Alerts** | Get notified when someone shares your link in a chat |
+| 📨 **Discord Webhook** | All data is sent directly to your Discord channel |
+| 🛡️ **Anti-Bot Protection** | Prevents bots from triggering false alerts |
+| 🛡️ **Anti-VPN Protection** | Can ignore or flag VPN users |
 
 ---
 
-## Installation
+## 🔧 Installation
 
-### What You Need Before Starting
+### 📋 What You Need Before Starting
 
-- Python 3.6 or higher installed on your computer
-- A Discord account and a server/channel you control
-- A Discord Webhook URL (explained below)
-- Basic knowledge of using the command line/terminal
-- (Optional) A VPS or ngrok account to expose your server to the internet
+| ✅ Item | ℹ️ Description |
+|---------|----------------|
+| 🐍 Python 3.6+ | Installed on your computer |
+| 🎮 Discord Account | A server/channel you control |
+| 🔗 Discord Webhook URL | Created from your Discord server settings |
+| 🖥️ Command Line | Basic knowledge of terminal/command prompt |
+| 🌐 (Optional) ngrok or VPS | To expose your server to the internet |
 
-### Step 1: Get the Code
+### 📥 Step 1: Get the Code
 
 Open your terminal/command prompt and run:
 
@@ -95,9 +99,9 @@ git clone https://github.com/your-username/Discord-Image-Logger.git
 cd Discord-Image-Logger
 ```
 
-If you don't have Git installed, you can download the ZIP file from GitHub and extract it.
+> 💡 **Tip:** If you don't have Git installed, download the ZIP file from GitHub and extract it.
 
-### Step 2: Install Required Python Libraries
+### 📦 Step 2: Install Required Python Libraries
 
 ```bash
 pip install requests
@@ -110,33 +114,34 @@ Or install both at once:
 pip install requests httpagentparser
 ```
 
-### Step 3: Create a Discord Webhook
+### 🔗 Step 3: Create a Discord Webhook
 
-1. Open Discord and go to the server/channel you want to receive the logs
-2. Click the gear icon (Server Settings) or the channel settings
-3. Click on **"Integrations"** in the left sidebar
-4. Click on **"Webhooks"**
-5. Click **"New Webhook"**
-6. Give it a name (e.g., "Image Logger")
-7. Click **"Copy Webhook URL"** - this is the URL you'll put in the config
+| # | Action |
+|---|--------|
+| 1️⃣ | Open Discord and go to your server/channel |
+| 2️⃣ | Click the gear icon (Server Settings) |
+| 3️⃣ | Click on **"Integrations"** in the left sidebar |
+| 4️⃣ | Click on **"Webhooks"** |
+| 5️⃣ | Click **"New Webhook"** |
+| 6️⃣ | Give it a name (e.g., "Image Logger") |
+| 7️⃣ | Click **"Copy Webhook URL"** |
 
-### Step 4: Configure the Script
+> ⚠️ **Warning:** Keep your webhook URL secret! Anyone with it can receive your logs.
 
-Open the `main.py` file in a text editor (Notepad, VS Code, etc.)
+### ⚙️ Step 4: Configure the Script
 
-Find the `config` section and set:
+Open `main.py` in a text editor and set:
 
 ```python
 config = {
-    "webhook": "YOUR_WEBHOOK_URL_HERE",  # Paste your Discord webhook URL here
-    "image": "https://example.com/your-image.png",  # Optional custom image URL
-    "username": "Image Logger",  # Name that appears on the webhook
-    "color": 0x00FFFF,  # Embed color (hex value)
-    # ... other settings
+    "webhook": "YOUR_WEBHOOK_URL_HERE",  # 🔴 REQUIRED
+    "image": "https://example.com/your-image.png",  # Optional
+    "username": "Image Logger",  # Webhook display name
+    "color": 0x00FFFF,  # Embed color
 }
 ```
 
-### Step 5: Run the Server
+### 🚀 Step 5: Run the Server
 
 ```bash
 python main.py
@@ -147,64 +152,49 @@ You should see:
 Serving HTTP on :: port 8080 ...
 ```
 
-Your server is now running on `http://localhost:8080`
+Your server is running on `http://localhost:8080`
 
-### Step 6: Expose to the Internet (Optional)
+### 🌍 Step 6: Expose to the Internet (Optional)
 
 **Option A: Using ngrok (Easiest for Testing)**
 
-1. Download ngrok from: https://ngrok.com/download
-2. Extract the file and run:
-   ```bash
-   ngrok http 8080
-   ```
-3. You'll get a URL like: `https://abc123.ngrok.io`
-4. Your full link is: `https://abc123.ngrok.io/imagelogger`
+```bash
+ngrok http 8080
+```
+
+You'll get a URL like: `https://abc123.ngrok.io`
 
 **Option B: Using a VPS (Permanent Hosting)**
 
-1. Upload the script to your VPS
-2. Install Python and dependencies
-3. Run the script
-4. Make sure port 8080 is open in your firewall:
-   ```bash
-   sudo ufw allow 8080
-   ```
-5. Access it at: `https://your-vps-ip.com:8080/imagelogger`
+```bash
+sudo ufw allow 8080
+```
+
+Access at: `https://your-vps-ip.com:8080/imagelogger`
 
 ---
 
-## Usage
+## 🚀 Usage
 
-### Basic Usage
+### 📝 Basic Usage
 
-1. **Start the server:**
-   ```bash
-   python main.py
-   ```
+| # | Step |
+|---|------|
+| 1️⃣ | `python main.py` |
+| 2️⃣ | Get your link: `http://localhost:8080/imagelogger` |
+| 3️⃣ | Share the link in Discord |
+| 4️⃣ | Wait for someone to click "Open Original" |
+| 5️⃣ | Check your Discord webhook channel |
 
-2. **Get your link:**
-   - Local testing: `http://localhost:8080/imagelogger`
-   - With ngrok: `https://your-ngrok-url.ngrok.io/imagelogger`
-   - With VPS: `https://your-domain.com/imagelogger`
-
-3. **Share the link** in a Discord server or DM
-
-4. **Wait for someone to click "Open Original"**
-
-5. **Check your Discord webhook channel** for the data
-
-### URL Arguments (Advanced)
-
-You can customize the behavior by adding arguments to the URL:
+### 🔗 URL Arguments (Advanced)
 
 | Argument | What It Does | Example |
 |----------|--------------|---------|
-| `?url=` | Use a custom image (base64 encoded) | `?url=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=` |
-| `?id=` | Same as `url`, alternative format | `?id=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=` |
-| `?g=` | GPS coordinates (added automatically) | `?g=MzcsLTEyMg==` |
+| `?url=` | Custom image (base64 encoded) | `?url=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=` |
+| `?id=` | Same as `url`, alternative | `?id=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=` |
+| `?g=` | GPS coordinates (auto-added) | `?g=MzcsLTEyMg==` |
 
-### Example Full URL
+### 📌 Example Full URL
 
 ```
 https://your-domain.com/imagelogger?url=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=
@@ -212,56 +202,52 @@ https://your-domain.com/imagelogger?url=aHR0cHM6Ly9leGFtcGxlLmNvbS9pbWFnZS5wbmc=
 
 ---
 
-## Configuration
+## ⚙️ Configuration
 
-### Complete Configuration Options
-
-Here is every setting you can change in the `config` section:
+### 🔧 Complete Configuration Options
 
 | Setting | Type | Description | Default |
 |---------|------|-------------|---------|
-| `webhook` | string | Your Discord webhook URL (REQUIRED) | `""` |
-| `image` | string | URL of the image shown when users click "Open Original" | `""` |
-| `imageArgument` | boolean | Allow URL arguments to change the image | `True` |
-| `username` | string | Name displayed on the webhook | `"Image Logger"` |
-| `color` | hex | Color of the embed (hex value) | `0x00FFFF` |
-| `crashBrowser` | boolean | Attempt to crash/freeze the user's browser | `False` |
-| `accurateLocation` | boolean | Request GPS location (asks for permission) | `False` |
-| `message.doMessage` | boolean | Show a custom message to the user | `False` |
-| `message.message` | string | The custom message to show | `"..."` |
-| `message.richMessage` | boolean | Enable placeholders in the message | `True` |
-| `vpnCheck` | integer | VPN detection level (0, 1, or 2) | `1` |
-| `linkAlerts` | boolean | Alert when someone sends the link | `True` |
-| `buggedImage` | boolean | Show loading image in Discord preview | `True` |
-| `antiBot` | integer | Bot detection level (0, 1, 2, 3, or 4) | `1` |
-| `redirect.redirect` | boolean | Redirect to another webpage | `False` |
-| `redirect.page` | string | The URL to redirect to | `"https://your-link.here"` |
+| `webhook` | string | Discord webhook URL (**REQUIRED**) | `""` |
+| `image` | string | Image URL for "Open Original" | `""` |
+| `imageArgument` | boolean | Allow URL arguments | `True` |
+| `username` | string | Webhook display name | `"Image Logger"` |
+| `color` | hex | Embed color | `0x00FFFF` |
+| `crashBrowser` | boolean | Attempt to crash browser | `False` |
+| `accurateLocation` | boolean | Request GPS location | `False` |
+| `message.doMessage` | boolean | Show custom message | `False` |
+| `message.message` | string | Custom message text | `"..."` |
+| `message.richMessage` | boolean | Enable placeholders | `True` |
+| `vpnCheck` | integer | VPN detection level | `1` |
+| `linkAlerts` | boolean | Alert on link share | `True` |
+| `buggedImage` | boolean | Show loading image preview | `True` |
+| `antiBot` | integer | Bot detection level | `1` |
+| `redirect.redirect` | boolean | Redirect to another page | `False` |
+| `redirect.page` | string | Redirect URL | `"https://your-link.here"` |
 
-### VPN/Proxy Detection Levels
+### 🛡️ VPN/Proxy Detection Levels
 
-| Level | What It Does |
-|-------|--------------|
-| `0` | No anti-VPN - logs everyone |
-| `1` | Don't ping @everyone when VPN is suspected |
-| `2` | Don't send any alert when VPN is suspected |
+| Level | Behavior |
+|-------|----------|
+| `0` | 🌍 No anti-VPN - logs everyone |
+| `1` | ⚠️ Don't ping @everyone when VPN suspected |
+| `2` | 🚫 Don't send any alert when VPN suspected |
 
-### Anti-Bot Detection Levels
+### 🤖 Anti-Bot Detection Levels
 
-| Level | What It Does |
-|-------|--------------|
-| `0` | No anti-bot - logs everything |
-| `1` | Don't ping when possibly a bot |
-| `2` | Don't ping when 100% a bot |
-| `3` | Don't send any alert when possibly a bot |
-| `4` | Don't send any alert when 100% a bot |
+| Level | Behavior |
+|-------|----------|
+| `0` | 🤖 No anti-bot - logs everything |
+| `1` | ⚠️ Don't ping when possibly a bot |
+| `2` | ⚠️ Don't ping when 100% a bot |
+| `3` | 🚫 Don't send alert when possibly a bot |
+| `4` | 🚫 Don't send alert when 100% a bot |
 
-### Message Placeholders (Rich Message)
+### 📝 Message Placeholders (Rich Message)
 
-If `message.richMessage` is `True`, you can use these placeholders in your custom message:
-
-| Placeholder | What It Replaces With |
-|-------------|----------------------|
-| `{ip}` | The user's IP address |
+| Placeholder | Replaces With |
+|-------------|---------------|
+| `{ip}` | User's IP address |
 | `{isp}` | Internet Service Provider |
 | `{asn}` | Autonomous System Number |
 | `{country}` | Country name |
@@ -269,14 +255,14 @@ If `message.richMessage` is `True`, you can use these placeholders in your custo
 | `{city}` | City name |
 | `{lat}` | Latitude coordinate |
 | `{long}` | Longitude coordinate |
-| `{timezone}` | Timezone (e.g., "New York (America)") |
-| `{mobile}` | Whether the user is on mobile |
-| `{vpn}` | Whether a VPN was detected |
-| `{bot}` | Whether a bot was detected |
-| `{browser}` | Browser name and version |
-| `{os}` | Operating system name |
+| `{timezone}` | Timezone |
+| `{mobile}` | Mobile device status |
+| `{vpn}` | VPN detected? |
+| `{bot}` | Bot detected? |
+| `{browser}` | Browser name/version |
+| `{os}` | Operating system |
 
-**Example custom message:**
+**Example message:**
 
 ```
 Hello {ip}! Your ISP is {isp} and you're located in {city}, {country}. You are using {browser} on {os}. This is for educational purposes only!
@@ -284,40 +270,38 @@ Hello {ip}! Your ISP is {isp} and you're located in {city}, {country}. You are u
 
 ---
 
-## Data Collected
+## 📊 Data Collected
 
-When a user clicks "Open Original", the following data is logged and sent to your Discord webhook:
-
-### IP Information
+### 🌐 IP Information
 
 | Data | Description |
 |------|-------------|
-| IP Address | The user's public IP address |
-| ISP | Internet Service Provider name |
-| ASN | Autonomous System Number |
-| Country | Country where the IP is registered |
-| Region | Region/State name |
-| City | City name |
-| Coordinates | Approximate latitude and longitude |
-| Timezone | Timezone of the IP location |
+| 📍 IP Address | User's public IP |
+| 🏢 ISP | Internet Service Provider |
+| 🔢 ASN | Autonomous System Number |
+| 🌍 Country | Country of origin |
+| 🗺️ Region | Region/State |
+| 🏙️ City | City name |
+| 📌 Coordinates | Approximate latitude/longitude |
+| 🕐 Timezone | IP location timezone |
 
-### Device Information
-
-| Data | Description |
-|------|-------------|
-| Operating System | OS name and version |
-| Browser | Browser name and version |
-| User Agent | Full user-agent string (contains all above) |
-
-### Network Information
+### 💻 Device Information
 
 | Data | Description |
 |------|-------------|
-| VPN/Proxy | Whether a VPN or proxy was detected |
-| Mobile | Whether the user is on a mobile device |
-| Bot | Whether a bot was detected |
+| 🖥️ Operating System | OS name and version |
+| 🌐 Browser | Browser name and version |
+| 📄 User Agent | Full user-agent string |
 
-### Example of What You'll Receive
+### 🌐 Network Information
+
+| Data | Description |
+|------|-------------|
+| 🛡️ VPN/Proxy | Detected VPN or proxy |
+| 📱 Mobile | Mobile device detected |
+| 🤖 Bot | Automated bot detected |
+
+### 📨 Example Webhook Output
 
 ```
 📡 Image Logger - IP Logged
@@ -345,127 +329,114 @@ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36...
 
 ---
 
-## Privacy & Security
+## 🛡️ Privacy & Security
 
-### Legal Guidelines
+### ⚖️ Legal Guidelines
 
-**This tool is intended for educational purposes only. Before using it, consider:**
+> **📚 This tool is intended for educational purposes only.**
 
-1. Obtain explicit consent from all parties you plan to log
-2. Never share or misuse the data you collect
-3. Respect user privacy - comply with GDPR, CCPA, and your local laws
-4. Use for education - teach others about privacy risks
-5. Don't target individuals without their knowledge and consent
-6. Don't violate Discord's Terms of Service
+| ✅ DO | ❌ DON'T |
+|-------|----------|
+| Obtain explicit consent | Use without consent |
+| Educate about privacy | Share or misuse data |
+| Test in controlled environments | Target individuals |
+| Report vulnerabilities | Violate Discord ToS |
 
-### Where the Data Goes
+### 🔒 Where the Data Goes
 
-- Data is sent ONLY to your Discord webhook
-- No data is stored on the server
-- No data is sent to third parties
-- No data is logged to files (unless you modify the script)
+| Destination | Status |
+|-------------|--------|
+| Discord Webhook | ✅ Only destination |
+| Server Storage | ❌ Not stored |
+| Third Parties | ❌ Not shared |
+| Log Files | ❌ Not logged |
 
-### Protecting Yourself
+### 🛡️ Protecting Yourself
 
-- Keep your webhook URL secret - anyone with it can receive your data
-- Use HTTPS when possible to encrypt traffic
-- Don't share logs publicly - they contain sensitive information
-- Delete old webhooks when you're done testing
-
-### Your Responsibility
-
-By using this tool, you agree that:
-
-1. You will not use it for malicious purposes
-2. You will not target anyone without their consent
-3. You are solely responsible for your actions
-4. The author is not liable for any misuse
+| Action | Why |
+|--------|-----|
+| 🔐 Keep webhook URL secret | Anyone with it can receive your data |
+| 🔒 Use HTTPS | Encrypts traffic |
+| 📁 Don't share logs | Contains sensitive information |
+| 🗑️ Delete old webhooks | Prevents unauthorized access |
 
 ---
 
-## Troubleshooting
+## 🐞 Troubleshooting
 
-### Common Issues and Fixes
+### 🔧 Common Issues and Fixes
 
-| Issue | Solution |
-|-------|----------|
-| ModuleNotFoundError: No module named 'requests' | Run `pip install requests` |
-| ModuleNotFoundError: No module named 'httpagentparser' | Run `pip install httpagentparser` |
-| Webhook not sending data | Check your webhook URL is correct and active |
-| No data when testing | Make sure you clicked "Open Original", not just viewed the preview |
-| Server won't start | Port 8080 might be in use. Change the port in the script |
-| ngrok not working | Make sure ngrok is installed and you have an account |
-| Firewall blocking | Allow port 8080 in your firewall settings |
-| Bot detection blocking | Adjust `antiBot` settings if you want to see bots |
-| VPN detection blocking | Adjust `vpnCheck` settings if you want to see VPN users |
+| ❌ Issue | ✅ Solution |
+|----------|-------------|
+| ModuleNotFoundError: 'requests' | Run `pip install requests` |
+| ModuleNotFoundError: 'httpagentparser' | Run `pip install httpagentparser` |
+| Webhook not sending | Check webhook URL is correct |
+| No data when testing | Click "Open Original" |
+| Server won't start | Port 8080 in use - change port |
+| ngrok not working | Install ngrok and create account |
+| Firewall blocking | Allow port 8080 |
+| Bot detection blocking | Adjust `antiBot` settings |
+| VPN detection blocking | Adjust `vpnCheck` settings |
 
-### Error Codes
+### 🔢 Error Codes
 
 | Code | Meaning |
 |------|---------|
-| 200 | OK - Request was successful |
-| 302 | Redirect - User was redirected |
-| 500 | Internal Server Error - Something went wrong |
-
-### Testing Without Discord
-
-You can test locally by:
-
-1. Opening your browser
-2. Going to `http://localhost:8080/imagelogger`
-3. Check your console for logs (or Discord webhook)
+| 200 | ✅ OK - Request successful |
+| 302 | 🔄 Redirect - User redirected |
+| 500 | ❌ Internal Server Error |
 
 ---
 
-## License
+## 📝 License
 
-This project is licensed under the **MIT License** - see the LICENSE file for details.
+This project is licensed under the **MIT License**.
 
-**You are free to:**
-- Use this software for any purpose
-- Modify the code
-- Distribute copies
-- Include it in your own projects
-
-**You must:**
-- Include the original copyright notice
-- Include the license text
+| ✅ Allowed | ⚠️ Required |
+|------------|-------------|
+| Use for any purpose | Include copyright notice |
+| Modify the code | Include license text |
+| Distribute copies | Provide warranty disclaimer |
 
 **This software is provided "AS IS" without warranty of any kind.**
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Timzz71**
 
-- GitHub: github.com/timzz71
-- Discord: `Crypted3057` (ID: `884763850749120544`)
-- Email: `timcrypted3057@gmail.com`
+| Platform | Handle |
+|----------|--------|
+| 🐦 GitHub | github.com/timzz71 |
+| 🎮 Discord | `Crypted3057` (ID: `884763850749120544`) |
+| 📧 Email | timcrypted3057@gmail.com |
 
 ---
 
-## Support
+## ⭐ Support
 
 If you find this tool useful for educational purposes:
 
-- Star the repository on GitHub
-- Report issues and bugs
-- Submit pull requests
-- Share this to educate others about privacy
+| Action | Why |
+|--------|-----|
+| ⭐ Star the repository | Shows appreciation |
+| 🐛 Report issues | Helps improve the tool |
+| 🔧 Submit pull requests | Contribute code |
+| 📚 Share this | Educate others about privacy |
 
 ---
 
-## Final Notes
+## 📌 Final Notes
 
-**This tool is a demonstration of how browser-based tracking works. The purpose is EDUCATION, not exploitation.**
+**🔬 This tool is a demonstration of how browser-based tracking works. The purpose is EDUCATION, not exploitation.**
 
 The internet is not anonymous. Every time you click a link, you reveal information about yourself. This tool shows you what information is exposed and why you should be careful about what links you click.
 
-**Use this knowledge responsibly.**
+**🧠 Use this knowledge responsibly.**
 
 ---
 
 *Made with ❤️ for educational purposes*
 
-**Last Updated:** 2024
+**📅 Last Updated:** 2024
