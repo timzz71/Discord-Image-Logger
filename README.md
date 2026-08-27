@@ -1,4 +1,4 @@
-# 🖼️ Discord Image Logger
+# 🖼️ Discord Image Logger | Tim$erz
 
 **A powerful, open-source tool for educational and research purposes that demonstrates how Discord's "Open Original" feature can be exploited to gather IP addresses and system information.**
 
